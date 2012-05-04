@@ -1,0 +1,25 @@
+/* CSS styles for STUDYPORTAL */
+
+body
+{
+
+}
+
+#wrapper
+{
+	margin: 0 auto;
+	background-color: #CCCCCC;
+	width: 960px;
+	height: 600px;
+}
+
+#login
+{
+	background-color: #999999;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	float: left;
+	margin-top: 150px;
+	margin-left: 200px;
+}
