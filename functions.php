@@ -19,7 +19,7 @@
 					<input type="text" name="username" />
 					</p>
 					<p>Password: </br>
-					<input type="text" name="password" />
+					<input type="password" name="password" />
 					</p>
 					<input type="submit" name="submitLogin" value="Log in" />
 				</form>';

@@ -13,6 +13,23 @@ body
 	height: 600px;
 }
 
+#nav
+{
+	background-color: #999999;
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+#userinfo
+{
+	float: right;
+	background-color: #666666;
+	width: 200px;
+	height: auto;
+}
+
+/* Styles for login box */
 #login
 {
 	background-color: #999999;
@@ -22,4 +39,24 @@ body
 	float: left;
 	margin-top: 150px;
 	margin-left: 200px;
+}
+
+#courses
+{
+}
+
+#calendar
+{
+}
+
+#messages
+{
+}
+
+#notifications
+{
+}
+
+#polls
+{
 }
