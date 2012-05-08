@@ -16,16 +16,48 @@
 		
 		<div id="nav">
 		
-			<h1>Navigation bar</h1>
+			
+			<?php
+			
+				// Show the navigation bar contents depending on the user status (is_admin, is_superuser)
+				
+				if(isset($_SESSION['sessionID']))
+				{
+				
+					echo '<p>';
+					if($_SESSION['is_admin'] == true || $_SESSION['is_superuser'] == true)
+					{
+						echo '<a href="accountman.php">Account Management</a></br>';
+						echo '<a href="courses.php">Courses</a>';
+					}
+					else
+					{
+						
+						echo '<a href="courses.php">Courses</a>';
+					}
+					echo '<p>';
+				
+				}
+			
+			?>
 		
-			<div id="userinfo">
+		</div>
+		
+		<!-- User information & logout -->
+		<div id="userinfo">
 			
 				<?php
 				
-					echo '<p>You are logged in as: ' . $_SESSION['sessionID'] . '</p>';
+					if(isset($_SESSION['sessionID']))
+					{
+						echo '<p>You are logged in as: ' . $_SESSION['firstname'] . ' ' . $_SESSION['lastname'] . '</p>';
+						echo '<p><a href="users.php?action=logout">Log out</a></p>';
+					}
+					else
+					{
+						echo '<p>You are not logged in</p>';
+					}
 				
 				?>
 				
 			</div>
-		
-		</div>

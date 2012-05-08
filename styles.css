@@ -1,10 +1,12 @@
 /* CSS styles for STUDYPORTAL */
 
+/* Sivun taustaväri yms. */
 body
 {
 
 }
 
+/* Sisällön rajaava alue */
 #wrapper
 {
 	margin: 0 auto;
@@ -16,8 +18,16 @@ body
 #nav
 {
 	background-color: #999999;
-	width: 100%;
+	width: 760px;
+	height: 100px;
+	float: left;
+}
+
+.insertuser
+{
+	width: 300px;
 	height: auto;
+	background-color: #999999;
 	float: left;
 }
 
@@ -26,7 +36,7 @@ body
 	float: right;
 	background-color: #666666;
 	width: 200px;
-	height: auto;
+	height: 100px;
 }
 
 /* Styles for login box */
@@ -39,6 +49,13 @@ body
 	float: left;
 	margin-top: 150px;
 	margin-left: 200px;
+}
+
+#groups
+{
+	padding: 10px;
+	background-color: #666666;
+	width: 320px;
 }
 
 #courses
