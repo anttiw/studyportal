@@ -64,8 +64,8 @@ header("location:result.php?m=".$msg);
 </body>
 </html>
 tämä siis on se mun courses1.php tiedosto joka jostain syystä ei lisää tietoja tietokantaan. jos viittisit vilkasta sitä nii saisin nuo muut implementoitua.
-
-tämä taas on result.php
+*/
+/*tämä taas on result.php
 
 <html>
 <body>
