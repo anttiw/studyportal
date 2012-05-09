@@ -38,13 +38,13 @@ $msg = "not Inserted";
 else
 {
 $msg = "Inserted";
-header("location:courses1.php?m=".$msg);
+header("location:result.php?m=".$msg);
 }
 }
 
 ?>
 
-		<form id="addCourse" name="addCourse" method="post" action="courses1.php?process">
+		<form id="addCourse" name="addCourse" method="post" action="result.php?process">
 
 		<p>Course Name:</p>
 		<input name="course" type="text" id="course" />
@@ -62,9 +62,36 @@ header("location:courses1.php?m=".$msg);
 		<input name="courseend" type="text" id="courseend" />
 		<input type="submit" name="Submit" value="Submit" />
 </body>
-</html>*/
-//tämä siis on se mun courses1.php tiedosto joka jostain syystä ei lisää tietoja tietokantaan. jos viittisit vilkasta sitä nii saisin nuo muut implementoitua.
+</html>
+tämä siis on se mun courses1.php tiedosto joka jostain syystä ei lisää tietoja tietokantaan. jos viittisit vilkasta sitä nii saisin nuo muut implementoitua.
 
+tämä taas on result.php
+
+<html>
+<body>
+<?php
+
+$course = $_POST['course'];
+$description = $_POST['description'];
+$content = $_POST['content'];
+$requirements = $_POST['requirements'];
+$grading = $_POST['grading'];
+$coursestart = $_POST['coursestart'];
+$courseend = $_POST['courseend'];
+
+echo "Course name: ". $course . "<br />";
+echo "Description: ". $description . "<br />";
+echo "Content: ". $content . "<br />";
+echo "Requirements: ". $requirements . "<br />";
+echo "Grading: ". $grading . "<br />";
+echo "Course starts: ". $coursestart . "<br />";
+echo "Course ends: ". $courseend . "<br />";
+?>
+
+
+</body>
+</html>
+*/
 
 	<!-- HTML code for divs -->
 	<div id="groups">
