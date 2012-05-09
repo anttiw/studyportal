@@ -13,6 +13,59 @@
 
 ?>
 
+//alkaa addcourse
+/*<html>
+<body>
+<?php
+$link=mysql_connect("localhost","root","kdt9edhq");
+  $database='studyportal';
+  if (!$link)
+  die('Failed to connect to Server'.mysql_error());
+  $db=mysql_select_db($database, $link);
+  session_start();
+  if(!$db)
+  die('Failed to select Data Base '.mysql_error());
+
+if(isset($_GET['process']))
+{
+$query="INSERT INTO courses (course_id, course_name, course_description, course_content, course_grading, course_requirements, course_start, course_end)VALUES ('NULL','".$course."','".$description."','".$content."','".$requirements."','".$grading."','".$coursestart."','".$courseend."');
+//echo $query; exit;
+$result = mysql_query($query) or die(mysql_error());
+if(!$result)
+{
+$msg = "not Inserted";
+}
+else
+{
+$msg = "Inserted";
+header("location:courses1.php?m=".$msg);
+}
+}
+
+?>
+
+		<form id="addCourse" name="addCourse" method="post" action="courses1.php?process">
+
+		<p>Course Name:</p>
+		<input name="course" type="text" id="course" />
+    		<p>Description:</p>
+		<textarea rows="3" cols="20" input name="description" type="text" id="description"></textarea>
+		<p>Content:</p>
+		<textarea rows="3" cols="20" input name="content" type="text" id="content"></textarea>
+		<p>Grading:</p>
+		<textarea rows="3" cols="20" input name="grading" type="text" id="grading"></textarea>
+		<p>Requirements:</p>
+		<textarea rows="3" cols="20" input name="requirements" type="text" id="requirements"></textarea>
+		<p>Course start:</p>
+		<input name="coursestart" type="text" id="coursestart" />
+		<p>Course end:</p>
+		<input name="courseend" type="text" id="courseend" />
+		<input type="submit" name="Submit" value="Submit" />
+</body>
+</html>*/
+//tämä siis on se mun courses1.php tiedosto joka jostain syystä ei lisää tietoja tietokantaan. jos viittisit vilkasta sitä nii saisin nuo muut implementoitua.
+
+
 	<!-- HTML code for divs -->
 	<div id="groups">
 	
